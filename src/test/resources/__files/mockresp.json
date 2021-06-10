@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "tags": [
+        "java",
+        "collections",
+        "java-stream"
+      ],
+      "owner": {
+        "reputation": 3,
+        "user_id": 2799103,
+        "user_type": "registered",
+        "accept_rate": 0,
+        "profile_image": "https://i.stack.imgur.com/8gKow.jpg?s=128&g=1",
+        "display_name": "Dhiraj333",
+        "link": "https://stackoverflow.com/users/2799103/dhiraj333"
+      },
+      "is_answered": false,
+      "view_count": 55,
+      "answer_count": 0,
+      "score": -4,
+      "last_activity_date": 1622469982,
+      "creation_date": 1620902619,
+      "last_edit_date": 1622469982,
+      "question_id": 67517878,
+      "content_license": "CC BY-SA 4.0",
+      "link": "https://stackoverflow.com/questions/67517878/java-8-collection-conversion-using-java-8-stream",
+      "title": "Java 8 collection conversion using Java 8 stream"
+    }
+  ]
+}

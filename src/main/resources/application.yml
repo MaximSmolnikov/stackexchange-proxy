@@ -1,0 +1,5 @@
+stackexchange.baseurl: https://api.stackexchange.com/2.2
+springdoc:
+  swagger-ui:
+    url: /openapi.yml
+    use-root-path: true

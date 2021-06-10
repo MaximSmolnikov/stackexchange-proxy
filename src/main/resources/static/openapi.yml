@@ -1,0 +1,88 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v1
+paths:
+  /search:
+    get:
+      tags:
+        - SearchApi
+      operationId: search
+      parameters:
+        - name: query
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: search
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SearchItem'
+components:
+  schemas:
+    Owner:
+      type: object
+      properties:
+        reputation:
+          type: number
+          format: double
+        link:
+          type: string
+        userId:
+          type: number
+          format: double
+        userType:
+          type: string
+        acceptRate:
+          type: number
+          format: double
+        profileImage:
+          type: string
+        displayName:
+          type: string
+    SearchItem:
+      type: object
+      properties:
+        tags:
+          type: array
+          items:
+            type: string
+        owner:
+          $ref: '#/components/schemas/Owner'
+        score:
+          type: number
+          format: double
+        link:
+          type: string
+        title:
+          type: string
+        isAnswered:
+          type: boolean
+        viewCount:
+          type: number
+          format: double
+        acceptedAnswerId:
+          type: number
+          format: double
+        answerCount:
+          type: number
+          format: double
+        lastActivityDate:
+          type: number
+          format: double
+        creationDate:
+          type: number
+          format: double
+        lastEditDate:
+          type: number
+          format: double
+        questionId:
+          type: number
+          format: double
+        contentLicense:
+          type: string
